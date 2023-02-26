@@ -1,16 +1,60 @@
-<header>
-    <h1>WatchList</h1>
-</header>
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="https://rlv.zcache.com/svc/view?pid=217514180610071479&rvtype=content&max_dim=424" />
+</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">My Lists</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">New List</a>
+          </li>
+          <li class="nav-item dropdown">
+            <%# <img class="avatar dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" /> %>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" data-turbo-method="delete" href="#">Log out</a>
+            </div>
+          </li>
+          <!--li class="nav-item"-->
+          <!--/li-->
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://d7hftxdivxxvm.cloudfront.net/?height=629&quality=80&resize_to=fit&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FbFEARAIyR4HPSAwk0FwklA%2Fnormalized.jpg&width=800);">
+  <div class="container">
+    <h1 style="color:white"><strong>Watch and Bookmark Your Favorite Movies</strong>!</h1>
+  </div>
+</div>
+
 <main>
-    <h2>Movie Lists</h2>
-  <ul class="list-cards">
+  <h2>Movie Lists</h2>
+<div class="cards">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGt9692bnY-p9L6DVr9CPpNotRMmXBvUYRqg&usqp=CAU)">
+    Comedies
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-CwneLD2EKfhey1SmntiaJQQFMDJtX17JHQ&usqp=CAU)">
+    Thrillers
+  </div>
+</div>
+  <%# <ul class="list-cards">
     <% @lists.each do |list| %>
-      <li>
+      <%# <li>
         <%= link_to list.name, list_path(list) %>
-      </li>
+      <%# </li>
     <% end %>
-    <li class="add-list">
-      <%= link_to 'add list', new_list_path %>
-    </li>
-  </ul>
+    <%# <li class="add-list"> %>
+      <%# <%= link_to 'add list', new_list_path %>
+    <%# </li>
+  </ul> %>
 </main>
